@@ -41,6 +41,9 @@ use App\Http\Controllers\ImageController;
   
   
     /*  Autometic Deactive Coupon */
+    Route::get('deepak-test',function(){
+      echo 'Hello Deepak';
+    });
     Route::get('/today/coupon/deactive',[CouponUserController::class,'tdaycpmdeactive']);
     /*  Campaign Deduct Amount User Wallet   */
     Route::get('/adclck/{camp_id}',[CompProcessController::class,'deductAmt']);
